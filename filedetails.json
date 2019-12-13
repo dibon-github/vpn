@@ -23,7 +23,6 @@ http-proxy 38.70.235.240 8080
 http-proxy-option CUSTOM-HEADER ""
 http-proxy-option CUSTOM-HEADER "POST https://viber.com HTTP/1.1"
 http-proxy-option CUSTOM-HEADER "X-Forwarded-For: viber.com"
-
 <ca>
 -----BEGIN CERTIFICATE-----
 MIIEATCCA2qgAwIBAgIJAOCyX0XMJp/pMA0GCSqGSIb3DQEBCwUAMIGyMQswCQYD
@@ -129,7 +128,6 @@ http-proxy 18.138.228.103 8118
 http-proxy-option CUSTOM-HEADER ""
 http-proxy-option CUSTOM-HEADER "POST https://viber.com HTTP/1.1"
 http-proxy-option CUSTOM-HEADER "X-Forwarded-For: viber.com"
-
 <ca>
 -----BEGIN CERTIFICATE-----
 MIIDKzCCAhOgAwIBAgIJAO4kNM4J3kl4MA0GCSqGSIb3DQEBCwUAMBMxETAPBgNV
