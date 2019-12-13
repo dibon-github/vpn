@@ -11,7 +11,6 @@ connect-retry infinite
 resolv-retry infinite
 setenv CLIENT_CERT 0
 persist-tun
-auth-user-pass
 auth none
 auth-nocache
 auth-retry interact
@@ -23,6 +22,10 @@ http-proxy 38.70.235.240 8080
 http-proxy-option CUSTOM-HEADER ""
 http-proxy-option CUSTOM-HEADER "POST https://viber.com HTTP/1.1"
 http-proxy-option CUSTOM-HEADER "X-Forwarded-For: viber.com"
+<auth-user-pass>
+baa
+10271523
+</auth-user-pass>
 <ca>
 -----BEGIN CERTIFICATE-----
 MIIEATCCA2qgAwIBAgIJAOCyX0XMJp/pMA0GCSqGSIb3DQEBCwUAMIGyMQswCQYD
@@ -53,7 +56,6 @@ BEUv/Z1/AWr7BLBIQCtMUZkmYVGJ
 proto tcp
 remote 47.245.29.160 465
 dev tun
-auth-user-pass
 persist-key
 persist-tun
 pull
@@ -71,13 +73,15 @@ redirect-gateway def1
 script-security 2
 cipher none
 setenv CLIENT_CERT 0
-#uncomment below for windows 10
-#setenv opt block-outside-dns # Prevent Windows 10 DNS leak
 auth none
 http-proxy 47.245.29.160 8118
 http-proxy-option CUSTOM-HEADER ""
 http-proxy-option CUSTOM-HEADER "POST https://viber.com HTTP/1.1"
 http-proxy-option CUSTOM-HEADER "X-Forwarded-For: viber.com"
+<auth-user-pass>
+baa
+10271523
+</auth-user-pass>
 <ca>
 -----BEGIN CERTIFICATE-----
 MIIDKzCCAhOgAwIBAgIJAO4kNM4J3kl4MA0GCSqGSIb3DQEBCwUAMBMxETAPBgNV
@@ -103,7 +107,6 @@ UDlt2BO5Oh8hpo0XMnOJjxGxdqA9oH9DILsJQHa4AMH/8j4hWRg/+PiJ5dixyoqP
 proto tcp
 remote 18.138.228.103 465
 dev tun
-auth-user-pass
 persist-key
 persist-tun
 pull
@@ -128,6 +131,10 @@ http-proxy 18.138.228.103 8118
 http-proxy-option CUSTOM-HEADER ""
 http-proxy-option CUSTOM-HEADER "POST https://viber.com HTTP/1.1"
 http-proxy-option CUSTOM-HEADER "X-Forwarded-For: viber.com"
+<auth-user-pass>
+baa
+10271523
+</auth-user-pass>
 <ca>
 -----BEGIN CERTIFICATE-----
 MIIDKzCCAhOgAwIBAgIJAO4kNM4J3kl4MA0GCSqGSIb3DQEBCwUAMBMxETAPBgNV
