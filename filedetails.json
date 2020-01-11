@@ -1,112 +1,10 @@
 {
-"ovpn_file":[
-  {"id":0,"file":"client
-dev tun
+  "ovpn_file":[
+    {"id":5,"file":"client
 proto tcp
-remote 38.70.235.240 110
-remote-cert-tls server
-nobind
-connect-retry-max 999
-connect-retry infinite
-resolv-retry infinite
-setenv CLIENT_CERT 0
-persist-tun
-auth none
-auth-nocache
-auth-retry interact
-cipher none
-keysize 0
-reneg-sec 0
-verb 1
-http-proxy 38.70.235.240 8080
-http-proxy-option CUSTOM-HEADER ""
-http-proxy-option CUSTOM-HEADER "POST https://viber.com HTTP/1.1"
-http-proxy-option CUSTOM-HEADER "X-Forwarded-For: viber.com"
-<auth-user-pass>
-baa
-10271523
-</auth-user-pass>
-<ca>
------BEGIN CERTIFICATE-----
-MIIEATCCA2qgAwIBAgIJAOCyX0XMJp/pMA0GCSqGSIb3DQEBCwUAMIGyMQswCQYD
-VQQGEwJQSDEMMAoGA1UECBMDTkNSMQ8wDQYDVQQHEwZNYW5pbGExFTATBgNVBAoT
-DFBIQ29ybmVyLk5FVDEbMBkGA1UECxMSQm9udmVpbyBBdXRvc2NyaXB0MRgwFgYD
-VQQDEw9QSENvcm5lci5ORVQgQ0ExETAPBgNVBCkTCEJvbi1jaGFuMSMwIQYJKoZI
-hvcNAQkBFhRvcGVudnBuQHBoY29ybmVyLm5ldDAeFw0xOTA2MDgyMDIzMTRaFw00
-NjEwMTQyMDIzMTRaMIGyMQswCQYDVQQGEwJQSDEMMAoGA1UECBMDTkNSMQ8wDQYD
-VQQHEwZNYW5pbGExFTATBgNVBAoTDFBIQ29ybmVyLk5FVDEbMBkGA1UECxMSQm9u
-dmVpbyBBdXRvc2NyaXB0MRgwFgYDVQQDEw9QSENvcm5lci5ORVQgQ0ExETAPBgNV
-BCkTCEJvbi1jaGFuMSMwIQYJKoZIhvcNAQkBFhRvcGVudnBuQHBoY29ybmVyLm5l
-dDCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEAxKyzeWAALqWhZx0d6jM2H/WB
-AJTzq30+7XyfsJZ1E05bvQ/iVpTEISU4mSg/bJyW6yoVeuR5sdULAwNTswGnqoYF
-V9VW36p0OJklTxgGQpy92b89UeUTxfoGFYRYd6JDqMp+eZLLDdf2JraKUD53gbDz
-HbMtVNmP00X4UT2p2S0CAwEAAaOCARswggEXMB0GA1UdDgQWBBRECIKLevT/AZM+
-5r1ixF2iGN+BzTCB5wYDVR0jBIHfMIHcgBRECIKLevT/AZM+5r1ixF2iGN+BzaGB
-uKSBtTCBsjELMAkGA1UEBhMCUEgxDDAKBgNVBAgTA05DUjEPMA0GA1UEBxMGTWFu
-aWxhMRUwEwYDVQQKEwxQSENvcm5lci5ORVQxGzAZBgNVBAsTEkJvbnZlaW8gQXV0
-b3NjcmlwdDEYMBYGA1UEAxMPUEhDb3JuZXIuTkVUIENBMREwDwYDVQQpEwhCb24t
-Y2hhbjEjMCEGCSqGSIb3DQEJARYUb3BlbnZwbkBwaGNvcm5lci5uZXSCCQDgsl9F
-zCaf6TAMBgNVHRMEBTADAQH/MA0GCSqGSIb3DQEBCwUAA4GBAICs6tRpZWpgHWUC
-DMkWedUD+cDYVlDTP2dwRY0Xi0FuNVlsRdEOWsBfVaXj+wpc2qn6fKt/sUVBQWof
-mKQlDlHY3rj0EqEPq+9VUMjxB2OMXMbtumK2usZ30O7nKcKSsLJsRhcaY6LghHkq
-BEUv/Z1/AWr7BLBIQCtMUZkmYVGJ
------END CERTIFICATE-----
-</ca>"},
-{"id":1,"file":"client
-proto tcp
-remote 47.245.29.160 465
+remote 3.1.79.145 465
 dev tun
-persist-key
-persist-tun
-pull
-resolv-retry infinite
-nobind
-user nobody
-comp-lzo
-remote-cert-tls server
-verb 3
-mute 2
-connect-retry 5 5
-connect-retry-max 8080
-mute-replay-warnings
-redirect-gateway def1
-script-security 2
-cipher none
-setenv CLIENT_CERT 0
-auth none
-http-proxy 47.245.29.160 8118
-http-proxy-option CUSTOM-HEADER ""
-http-proxy-option CUSTOM-HEADER "POST https://viber.com HTTP/1.1"
-http-proxy-option CUSTOM-HEADER "X-Forwarded-For: viber.com"
-<auth-user-pass>
-baa
-10271523
-</auth-user-pass>
-<ca>
------BEGIN CERTIFICATE-----
-MIIDKzCCAhOgAwIBAgIJAO4kNM4J3kl4MA0GCSqGSIb3DQEBCwUAMBMxETAPBgNV
-BAMMCENoYW5nZU1lMB4XDTE5MDgyOTA5MTY1MFoXDTI5MDgyNjA5MTY1MFowEzER
-MA8GA1UEAwwIQ2hhbmdlTWUwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIB
-AQDfLgDLYablqms64ksNogkrhfE0WaMkof3XMMGMImC+gkpMV/Wl0OhbJiMVWh3z
-VSPwF6pJhcunyg721Z5TEbxQ9L7xaRZGU7TO//EWas4Op3qJ/MNCo/gmXdxSMurF
-ufoSmZ64JFejMy1uo/6X7BVERE/5zw4IfxLzOFEaI/78VkHMj0cziUv7/cnX01tu
-Nycrqx5DMQly8mw4YL88r95qyqegFhwI+mKAovVT4gOqP1mxX771h+N1mn5SZQUb
-iqO9+vuU6TK3umAvkQxQT1HNuEiCw5oiRs8XIxbztIktRSMickUNKQJIu3aV7XjF
-xjGJzgLbgAnnLq9UMtHRcSEhAgMBAAGjgYEwfzAdBgNVHQ4EFgQUW4M8stQ1G0NA
-y/2LN6t/TbKwzCgwQwYDVR0jBDwwOoAUW4M8stQ1G0NAy/2LN6t/TbKwzCihF6QV
-MBMxETAPBgNVBAMMCENoYW5nZU1lggkA7iQ0zgneSXgwDAYDVR0TBAUwAwEB/zAL
-BgNVHQ8EBAMCAQYwDQYJKoZIhvcNAQELBQADggEBAH0cWyXdCLaBXjTiY042Re9g
-j+fvRvMl0CtNV+TbPlzwpcgLKE2ol2kIxp7KqJDznGN2KeOB8mTJNNvn+Ru+eEAd
-4aGFFh2rOQtr6hqlX30DG+JcHBYh4uQS+Ii+sLWDODhAtwzDoQI3HpXuBjD27Jth
-JsZ5dGll9IyPtcRzEAgj3kl6V2ikMjCUSka7Cm2VkavDqOi3qC/qgDZIIW6Hm2HC
-UDlt2BO5Oh8hpo0XMnOJjxGxdqA9oH9DILsJQHa4AMH/8j4hWRg/+PiJ5dixyoqP
-8cN5qPr4OmNENmgiCktJsfEJzUP5zidRPBMkVOd4zImxDfJS7OhQrSx2pIIIBZE=
------END CERTIFICATE-----
-</ca>"},
-{"id":2,"file":"client
-proto tcp
-remote 18.138.228.103 465
-dev tun
+auth-user-pass
 persist-key
 persist-tun
 pull
@@ -127,14 +25,10 @@ setenv CLIENT_CERT 0
 #uncomment below for windows 10
 #setenv opt block-outside-dns # Prevent Windows 10 DNS leak
 auth none
-http-proxy 18.138.228.103 8118
+http-proxy 3.1.79.145 8118
 http-proxy-option CUSTOM-HEADER ""
 http-proxy-option CUSTOM-HEADER "POST https://viber.com HTTP/1.1"
 http-proxy-option CUSTOM-HEADER "X-Forwarded-For: viber.com"
-<auth-user-pass>
-baa
-10271523
-</auth-user-pass>
 <ca>
 -----BEGIN CERTIFICATE-----
 MIIDKzCCAhOgAwIBAgIJAO4kNM4J3kl4MA0GCSqGSIb3DQEBCwUAMBMxETAPBgNV
@@ -154,6 +48,6 @@ j+fvRvMl0CtNV+TbPlzwpcgLKE2ol2kIxp7KqJDznGN2KeOB8mTJNNvn+Ru+eEAd
 JsZ5dGll9IyPtcRzEAgj3kl6V2ikMjCUSka7Cm2VkavDqOi3qC/qgDZIIW6Hm2HC
 UDlt2BO5Oh8hpo0XMnOJjxGxdqA9oH9DILsJQHa4AMH/8j4hWRg/+PiJ5dixyoqP
 8cN5qPr4OmNENmgiCktJsfEJzUP5zidRPBMkVOd4zImxDfJS7OhQrSx2pIIIBZE=
------END CERTIFICATE-----
-</ca>"}]
+-----END CERTIFICATE-----"},
+    {"id":1,"file":""}]
 }
