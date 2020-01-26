@@ -1,0 +1,36 @@
+wget http://prdownloads.sourceforge.net/webadmin/webmin-1.940-2.noarch.rpm
+yum -y install perl perl-Net-SSLeay openssl perl-IO-Tty perl-Encode-Detect
+rpm -U webmin-1.940-2.noarch.rpm
+yum -y install httpd
+service httpd startservice httpd status
+service httpd start
+service httpd status
+/sbin/iptables -I INPUT -p tcp --dport 80 -j ACCEPT
+/etc/rc.d/init.d/iptables save
+yum -y install php php-mysql
+yum search php-
+yum -y install php-mcrypt.x86_64
+yum -y install php-mbstring.x86_64
+chkconfig httpd on
+chkconfig mysqld on
+service httpd restart
+sudo nano /etc/httpd/conf.modules.d/00-base.conf
+menu
+03
+cd /var/www/html;
+wget -O src.zip 'https://files.phpmyadmin.net/phpMyAdmin/4.9.1/phpMyAdmin-4.9.1-english.zip';
+unzip src.zip;
+rm -f src.zip;
+mv phpMyAdmin* phpMyAdmin;
+cd /var/www/html
+rm -f rm -rf phpMyAdmin* phpMyAdmin;
+rm -rf phpMyAdmin* phpMyAdmin;
+cd var/www/html
+cd /var/www/html
+zip -r sleak.zip admin ads assets cf controls download fileupload flag gulp-tasks online pages partials PSD test urlshortener userconnected vendors .htacess checkuser. php chmod.php chmodopenvpn.php contactus.php create.php delexpired.php disclaimer.php download.php expiration.php extenexpiration.php footerads.php getusers.php heading.php index.php nav.php nav1.php privacy.php serverlist.php serverstatus.php terms.php uploadfile.php userlist.php
+yum install zip.
+yum install zip
+zip -r sleak.zip admin ads assets cf controls download fileupload flag gulp-tasks online pages partials PSD test urlshortener userconnected vendors .htacess checkuser. php chmod.php chmodopenvpn.php contactus.php create.php delexpired.php disclaimer.php download.php expiration.php extenexpiration.php footerads.php getusers.php heading.php index.php nav.php nav1.php privacy.php serverlist.php serverstatus.php terms.php uploadfile.php userlist.php
+php-v
+php v
+php -v
