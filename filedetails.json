@@ -114,11 +114,7 @@ e69c099f0b496967e14cd3ff885e5930
 -----END OpenVPN Static key V1-----
 </tls-auth>
 "},
-    {"id":1,"file":""},
-    {"id":2,"file":""},
-    {"id":3,"file":""},
-    {"id":4,"file":""},
-    {"id":5,"file":"client
+    {"id":1,"file":"client
 dev tun
 proto tcp
 sndbuf 0
